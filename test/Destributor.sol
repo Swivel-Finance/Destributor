@@ -5,7 +5,7 @@ pragma solidity 0.8.4;
 import './Interfaces.sol'
 import './MerkleProof.sol'
 
-contract Destributor is IDestributor {
+contract Destributor {
   mapping (uint256 => bytes32) public merkleRoot;
   mapping (uint256 => mapping (uint256 => uint256)) private claims;
   mapping (uint256 => bool) private cancelled;
